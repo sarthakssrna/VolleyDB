@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android = "http://schemas.android.com/apk/res/android"
+ android:layout_width = "match_parent"
+ android:layout_height = "wrap_content"
+	android:padding="8dp">
+
+
+	<ImageView
+		android:id="@+id/cover_image"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_marginRight="16dp"
+		/>
+
+
+	<TextView
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text="Sample song name"
+		android:id="@+id/song_name"
+		android:padding="4dp"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		android:layout_toRightOf="@id/cover_image"/>
+
+
+	<TextView
+		android:layout_width = "wrap_content" android:layout_height = "wrap_content"
+		android:text="Sample artist name"
+		android:id="@+id/artist_name"
+		android:padding="4dp"
+		android:textSize="15sp"
+		android:layout_toRightOf="@id/cover_image"
+		android:layout_below="@id/song_name"/>
+	
+
+	
+	<View
+	 android:layout_width = "match_parent"
+		android:layout_height = "1dp"
+	 android:background="#F0F0F0"
+		android:layout_below="@id/cover_image"
+	 />
+	
+</RelativeLayout>
